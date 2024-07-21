@@ -22,7 +22,7 @@ This route manages the voting system, allowing for upvotes and removing votes. N
 
 ## Deployment
 
-The full stack project is deployed on Render and can be accessed at [https://social-media-backend-rbkm.onrender.com](https://social-media-backend-rbkm.onrender.com).
+The full stack project is deployed on Render and can be accessed at https://social-media-backend-rbkm.onrender.com/docs.
 
 
 ## Setup and Installation
