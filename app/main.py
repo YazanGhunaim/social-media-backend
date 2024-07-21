@@ -25,4 +25,4 @@ app.include_router(vote.router)
 
 @app.get('/healthz')
 def healthcheck():
-    return "Yes!"
+    return "Everything is up and running"
