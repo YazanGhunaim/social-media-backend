@@ -46,3 +46,19 @@ jobs:
         run: |
           pip install pytest
           pytest --disable-warnings -v -s
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs:
+      - build
+    environment:
+      name: Production
+    name: Trigger Render Deployment
+
+    steps:
+      - name: Trigger deployment
+        uses: sws2apps/render-deployment@main
+        with:
+          serviceId: ${{ secrets.RENDER_SERVICE_ID }}
+          apiKey: ${{ secrets.RENDER_API_KEY }}
+          multipleDeployment: false #optional, default true
